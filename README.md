@@ -1,8 +1,8 @@
 APSplitViewController
-=============
-A custom SplitViewController
--------
+=====================
 
+A custom SplitViewController
+----------------------------
 * it always keeps both sides visible
 * it's always launched in the Portrait but it's rotated to any direction properly
 * each side contains UINavigationController so it's easy to make standard navigation by pushing and poping UIViewControllers
@@ -10,8 +10,9 @@ A custom SplitViewController
 
 
 Future releases
--------
-Besides that it's used in 3 real project it's still in the initial stage.
+---------------
+
+### Besides the APSplitViewController is used in 3 real project it's still in the initial stage.
 I'd like to have in future release:
 * launch with landscape mode (not it makes 20px shift)
 * optionally hide left side in Portrait
