@@ -1,0 +1,5 @@
+APSplitViewController Ð a custom SplitViewController
+Ð it always keeps both sides visible
+Ð it's always launched in the Portrait but it's rotated to any direction properly
+Ð each side contains UINavigationController so it's easy to make standard navigation by pushing and poping UIViewControllers
+Ð several APSplitViewController can be contained in the custom UITabBarController (CustomTabBarController)
