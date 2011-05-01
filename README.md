@@ -12,7 +12,7 @@ A custom SplitViewController
 Future releases
 ---------------
 
-### Besides the APSplitViewController is used in 3 real project it's still in the initial stage.
+### Besides APSplitViewController is used in 3 real project it's still in the initial stage.
 I'd like to have in future release:
 * launch with landscape mode (not it makes 20px shift)
 * optionally hide left side in Portrait
