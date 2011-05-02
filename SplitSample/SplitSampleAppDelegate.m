@@ -7,7 +7,7 @@
 //
 
 #import "SplitSampleAppDelegate.h"
-#import "APCustomTabBarController.h"
+#import "APTabBarControllerForSplitController.h"
 
 @implementation SplitSampleAppDelegate
 

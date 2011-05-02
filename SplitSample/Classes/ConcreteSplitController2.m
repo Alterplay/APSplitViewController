@@ -30,8 +30,8 @@
     _right = [[UIViewController alloc] init];
     _right.view.backgroundColor = [UIColor redColor];
     
-    [self setDetailController:_left];
-    [self setMasterController:_right];
+    [self pushDetailController:_left];
+    [self pushMasterController:_right];
 }
 
 - (void)viewDidUnload

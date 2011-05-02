@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "APBaseSplitViewController.h"
+#import "APSplitViewController.h"
 
-@interface ConcreteSplitController2 : APBaseSplitViewController 
+@interface ConcreteSplitController2 : APSplitViewController 
 {
     UIViewController *_left;
     UIViewController *_right;

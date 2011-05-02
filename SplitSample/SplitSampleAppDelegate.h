@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class APCustomTabBarController;
+@class APTabBarControllerForSplitController;
 
 @interface SplitSampleAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
 
@@ -16,6 +16,6 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet APCustomTabBarController *tabBarController;
+@property (nonatomic, retain) IBOutlet APTabBarControllerForSplitController *tabBarController;
 
 @end
