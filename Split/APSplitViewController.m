@@ -27,8 +27,8 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 #pragma mark Helpers
 
 // returns size of split view
-- (CGSize) sizeRotated
-{
+- (CGSize) sizeRotated {
+    
 	UIScreen *screen = [UIScreen mainScreen];
 	CGRect bounds = screen.bounds; // always implicitly in Portrait orientation.
 	CGRect appFrame = screen.applicationFrame;
@@ -48,8 +48,8 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 	return size;
 }
 
-- (void) layoutSubviews
-{
+- (void) layoutSubviews {
+    
 	NSLog(@"layoutSubviews");
 	
 	CGSize size = [self sizeRotated];
@@ -65,8 +65,7 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 	_divider.frame = CGRectMake(constMasterWidth, 0, constDividerWidth, size.height);
 }
 
-- (void) dealloc
-{
+- (void) dealloc {
     [_master release];
     [_detail release];
     [super dealloc];
@@ -74,8 +73,8 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 
 #pragma mark - View lifecycle
 
-- (void) pushMasterController:(UIViewController *)controller
-{
+- (void) pushMasterController:(UIViewController *)controller {
+    
 	CGSize size = [self sizeRotated];
 	
 	controller.view.frame = CGRectMake(0, 0, constMasterWidth, size.height);
@@ -92,8 +91,8 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 	[self.view bringSubviewToFront:_divider];
 }
 
-- (void) pushDetailController:(UIViewController *)controller
-{
+- (void) pushDetailController:(UIViewController *)controller {
+    
 	CGSize size = [self sizeRotated];
 	
     controller.view.frame = CGRectMake(0, 0, size.width-constDetailStartPoint, size.height);
@@ -112,8 +111,8 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 	[self.view bringSubviewToFront:_divider];
 }
 
-- (void) loadView
-{
+- (void) loadView {
+    
 	CGSize size = [self sizeRotated];
 	
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
@@ -135,8 +134,7 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
     [imageView release];
 }
 
-- (void) viewDidLoad
-{
+- (void) viewDidLoad {
     [super viewDidLoad];
 
     _master = [UINavigationController new];
@@ -153,8 +151,7 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 //	NSLog(@"_detail.view.frame: %@", NSStringFromCGRect(_detail.view.frame));
 }
 
-- (void) viewDidUnload
-{
+- (void) viewDidUnload {
     [_master release], _master = nil;
     [_detail release], _detail = nil;
 }
@@ -162,16 +159,14 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 #pragma mark -
 #pragma mark STANDARD METHODS
 
-- (void) viewWillAppear:(BOOL)animated
-{
+- (void) viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
     
 	[_master viewWillAppear:animated];
 	[_detail viewWillAppear:animated];
 }
 
-- (void) viewDidAppear:(BOOL)animated
-{
+- (void) viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	[_master viewDidAppear:animated];
 	[_detail viewDidAppear:animated];
@@ -185,61 +180,51 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 //	[self layoutSubviews];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];
 	[_master viewWillDisappear:animated];
 	[_detail viewWillDisappear:animated];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
+- (void)viewDidDisappear:(BOOL)animated {
 	[super viewDidDisappear:animated];
 	[_master viewDidDisappear:animated];
 	[_detail viewDidDisappear:animated];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
 }
 
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-{
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
 	[_master willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
 	[_detail willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];	
 //	[self layoutSubviews];
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-{
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
 	[_master didRotateFromInterfaceOrientation:fromInterfaceOrientation];
 	[_detail didRotateFromInterfaceOrientation:fromInterfaceOrientation];
     
 //    [self layoutSubviews];
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration 
-{
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
 	[_master willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
 	[_detail willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
 }
 
-- (void)willAnimateFirstHalfOfRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-{
+- (void)willAnimateFirstHalfOfRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
 	[_master willAnimateFirstHalfOfRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
 	[_detail willAnimateFirstHalfOfRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
 }
 
-- (void)didAnimateFirstHalfOfRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-{
+- (void)didAnimateFirstHalfOfRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
 	[_master didAnimateFirstHalfOfRotationToInterfaceOrientation:toInterfaceOrientation];
 	[_detail didAnimateFirstHalfOfRotationToInterfaceOrientation:toInterfaceOrientation];
 }
 
-- (void)willAnimateSecondHalfOfRotationFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation duration:(NSTimeInterval)duration
-{
+- (void)willAnimateSecondHalfOfRotationFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation duration:(NSTimeInterval)duration {
 	[_master willAnimateSecondHalfOfRotationFromInterfaceOrientation:fromInterfaceOrientation duration:duration];
 	[_detail willAnimateSecondHalfOfRotationFromInterfaceOrientation:fromInterfaceOrientation duration:duration];
 }

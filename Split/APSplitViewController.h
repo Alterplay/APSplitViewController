@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface APSplitViewController : UIViewController 
-{
-    UINavigationController *_master;
-    UINavigationController *_detail;
+@interface APSplitViewController : UIViewController {
     UIView *_divider;
 }
 

@@ -17,18 +17,15 @@
 }
 
 // slatvick: it's' necessary because it's rotated automatically
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
-{
-//	BOOL isShouldRotate = [super shouldAutorotateToInterfaceOrientation:interfaceOrientation];
-    // Overriden to allow any orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
 }
 
 #pragma mark -
 #pragma mark SEND EVENT TO NON–ACTIVE SPLITCONTROLLERS
 
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-{
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    
 	for (UIViewController *ctrl in self.viewControllers) 
 	{
 		// uncommented to support iPhone version with standard TabBarController
@@ -38,8 +35,8 @@
 		}
 	} 
 }
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-{
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    
 	for (UIViewController *ctrl in self.viewControllers) 
 	{
         // uncommented to support iPhone version with standard TabBarController
@@ -50,8 +47,8 @@
 	} 
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-{
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    
 	for (UIViewController *ctrl in self.viewControllers) 
 	{
         // uncommented to support iPhone version with standard TabBarController

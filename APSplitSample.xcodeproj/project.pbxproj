@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F9098276136DA60000C99CF5 /* ConcreteSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9098270136DA60000C99CF5 /* ConcreteSplitController.m */; };
-		F9098277136DA60000C99CF5 /* ConcreteSplitController2.m in Sources */ = {isa = PBXBuildFile; fileRef = F9098272136DA60000C99CF5 /* ConcreteSplitController2.m */; };
 		F9098289136DA63000C99CF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9098287136DA63000C99CF5 /* InfoPlist.strings */; };
 		F909828C136DA64400C99CF5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F909828A136DA64400C99CF5 /* MainWindow.xib */; };
+		F93A8175136EB11200BAA65A /* Icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = F93A8174136EB11200BAA65A /* Icon72.png */; };
+		F93A8177136EB85500BAA65A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F93A8176136EB85500BAA65A /* README.md */; };
 		F9C811B9136D956D00505A8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C811B8136D956D00505A8E /* UIKit.framework */; };
 		F9C811BB136D956D00505A8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C811BA136D956D00505A8E /* Foundation.framework */; };
 		F9C811BD136D956D00505A8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C811BC136D956D00505A8E /* CoreGraphics.framework */; };
@@ -23,12 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F909826F136DA60000C99CF5 /* ConcreteSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ConcreteSplitController.h; sourceTree = "<group>"; };
+		F909826F136DA60000C99CF5 /* ConcreteSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteSplitController.h; sourceTree = "<group>"; };
 		F9098270136DA60000C99CF5 /* ConcreteSplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteSplitController.m; sourceTree = "<group>"; };
-		F9098271136DA60000C99CF5 /* ConcreteSplitController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteSplitController2.h; sourceTree = "<group>"; };
-		F9098272136DA60000C99CF5 /* ConcreteSplitController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteSplitController2.m; sourceTree = "<group>"; };
 		F9098288136DA63000C99CF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F909828B136DA64400C99CF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F93A8174136EB11200BAA65A /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon72.png; sourceTree = "<group>"; };
+		F93A8176136EB85500BAA65A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		F9C811B4136D956D00505A8E /* APSplitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APSplitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C811B8136D956D00505A8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F9C811BA136D956D00505A8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,9 +39,9 @@
 		F9C811C7136D956E00505A8E /* SplitSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitSampleAppDelegate.h; sourceTree = "<group>"; };
 		F9C811C8136D956E00505A8E /* SplitSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitSampleAppDelegate.m; sourceTree = "<group>"; };
 		F9E72E5D136DA99900CD71CC /* APSplitSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "APSplitSample-Info.plist"; sourceTree = "<group>"; };
-		F9FDD3E0136DD23200FA3428 /* APSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = APSplitViewController.h; sourceTree = "<group>"; };
+		F9FDD3E0136DD23200FA3428 /* APSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSplitViewController.h; sourceTree = "<group>"; };
 		F9FDD3E1136DD23200FA3428 /* APSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSplitViewController.m; sourceTree = "<group>"; };
-		F9FDD3E2136DD23200FA3428 /* APTabBarControllerForSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = APTabBarControllerForSplitController.h; sourceTree = "<group>"; };
+		F9FDD3E2136DD23200FA3428 /* APTabBarControllerForSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTabBarControllerForSplitController.h; sourceTree = "<group>"; };
 		F9FDD3E3136DD23200FA3428 /* APTabBarControllerForSplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTabBarControllerForSplitController.m; sourceTree = "<group>"; };
 		F9FDD3E5136DD23200FA3428 /* split-divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "split-divider.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,8 +65,6 @@
 			children = (
 				F909826F136DA60000C99CF5 /* ConcreteSplitController.h */,
 				F9098270136DA60000C99CF5 /* ConcreteSplitController.m */,
-				F9098271136DA60000C99CF5 /* ConcreteSplitController2.h */,
-				F9098272136DA60000C99CF5 /* ConcreteSplitController2.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -73,6 +72,7 @@
 		F9C811A9136D956D00505A8E = {
 			isa = PBXGroup;
 			children = (
+				F93A8176136EB85500BAA65A /* README.md */,
 				F9C811BE136D956D00505A8E /* SplitSample */,
 				F9C811B7136D956D00505A8E /* Frameworks */,
 				F9C811B5136D956D00505A8E /* Products */,
@@ -113,10 +113,11 @@
 		F9C811BF136D956E00505A8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F9C811C5136D956E00505A8E /* main.m */,
+				F9C811C4136D956E00505A8E /* APSplitSample-Prefix.pch */,
+				F93A8174136EB11200BAA65A /* Icon72.png */,
 				F9E72E5D136DA99900CD71CC /* APSplitSample-Info.plist */,
 				F9098287136DA63000C99CF5 /* InfoPlist.strings */,
-				F9C811C4136D956E00505A8E /* APSplitSample-Prefix.pch */,
-				F9C811C5136D956E00505A8E /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,6 +193,8 @@
 				F909828C136DA64400C99CF5 /* MainWindow.xib in Resources */,
 				F9E72E5E136DA99900CD71CC /* APSplitSample-Info.plist in Resources */,
 				F9FDD3E8136DD23200FA3428 /* split-divider.png in Resources */,
+				F93A8175136EB11200BAA65A /* Icon72.png in Resources */,
+				F93A8177136EB85500BAA65A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +208,6 @@
 				F9C811C6136D956E00505A8E /* main.m in Sources */,
 				F9C811C9136D956E00505A8E /* SplitSampleAppDelegate.m in Sources */,
 				F9098276136DA60000C99CF5 /* ConcreteSplitController.m in Sources */,
-				F9098277136DA60000C99CF5 /* ConcreteSplitController2.m in Sources */,
 				F9FDD3E6136DD23200FA3428 /* APSplitViewController.m in Sources */,
 				F9FDD3E7136DD23200FA3428 /* APTabBarControllerForSplitController.m in Sources */,
 			);

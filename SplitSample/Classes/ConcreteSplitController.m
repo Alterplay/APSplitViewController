@@ -8,12 +8,18 @@
 
 #import "ConcreteSplitController.h"
 
+@interface ConcreteSplitController()
+- (UIColor *) randomColor;
+- (UIViewController*) randomViewController;
+- (void) addPushButton:(UIViewController*)viewController;
+- (void) buttonPushRandomViewController;
+@end
+
 @implementation ConcreteSplitController
 
 @synthesize left, right;
 
-- (void)dealloc
-{
+- (void)dealloc {
     self.left = nil;
     self.right = nil;
 
@@ -21,6 +27,30 @@
 }
 
 #pragma mark - View lifecycle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.left = [self randomViewController];
+    self.right = [self randomViewController];
+    
+    [self pushMasterController:self.left];
+    [self pushDetailController:self.right];
+    
+    self.left.title = @"Master";
+    self.right.title = @"Detail root";
+    
+    [self addPushButton:self.right];
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    
+    self.left = nil;
+    self.right = nil;
+}
+
+#pragma mark - Helpers
 
 - (UIColor *) randomColor {
     CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
@@ -35,23 +65,19 @@
     return [viewController autorelease];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    self.left = [self randomViewController];
-    self.right = [self randomViewController];
-    
-    [self pushDetailController:self.left];
-    [self pushMasterController:self.right];
+- (void) addPushButton:(UIViewController*)viewController {
+    UINavigationItem *navigationItem = viewController.navigationItem;
+    navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Push"
+                                                                          style:UIBarButtonItemStyleBordered 
+                                                                         target:self 
+                                                                         action:@selector(buttonPushRandomViewController)] autorelease];   
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    
-    self.left = nil;
-    self.right = nil;
+- (void) buttonPushRandomViewController {
+    UIViewController *randomViewController = [self randomViewController];
+    randomViewController.title = @"Detail";
+    [self addPushButton:randomViewController];
+    [self.detail pushViewController:randomViewController animated:YES];
 }
 
 @end
