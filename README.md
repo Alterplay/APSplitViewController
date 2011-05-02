@@ -5,9 +5,9 @@ APSplitViewController – a custom SplitViewController
 * each side contains UINavigationController so it's easy to make standard navigation by pushing and poping UIViewControllers
 * several APSplitViewController can be contained in the custom UITabBarController (APTabBarControllerForSplitController)
 
-[![](http://1.bp.blogspot.com/-f-nTeqBOFH4/Tb6Ed0Pc7UI/AAAAAAAABXA/6-bCaGSOLgs/s1600/alterplay-APSplitViewController-portrait.png)](http://1.bp.blogspot.com/-f-nTeqBOFH4/Tb6Ed0Pc7UI/AAAAAAAABXA/6-bCaGSOLgs/s1600/alterplay-APSplitViewController-portrait.png)
-[![](http://1.bp.blogspot.com/-6JodW49qDGo/Tb6EdgfwKLI/AAAAAAAABW8/xvFUEnr1hVI/s1600/alterplay-APSplitViewController-landscape%25E2%2580%2593root.png)](http://1.bp.blogspot.com/-6JodW49qDGo/Tb6EdgfwKLI/AAAAAAAABW8/xvFUEnr1hVI/s1600/alterplay-APSplitViewController-landscape%25E2%2580%2593root.png)
-[![](http://1.bp.blogspot.com/-AIYYk8cI2lg/Tb6EdAiX4HI/AAAAAAAABW4/6zPeARln-lY/s1600/alterplay-APSplitViewController-landscape%25E2%2580%2593subcontroller.png)](http://1.bp.blogspot.com/-AIYYk8cI2lg/Tb6EdAiX4HI/AAAAAAAABW4/6zPeARln-lY/s1600/alterplay-APSplitViewController-landscape%25E2%2580%2593subcontroller.png)
+[![](https://lh6.googleusercontent.com/_bJJJYSjRDfE/Tb6Ed0Pc7UI/AAAAAAAABXA/YrNFjFWV_84/s288/alterplay-APSplitViewController-portrait.png)](https://lh6.googleusercontent.com/_bJJJYSjRDfE/Tb6Ed0Pc7UI/AAAAAAAABXA/YrNFjFWV_84/s800/alterplay-APSplitViewController-portrait.png)
+[![](https://lh5.googleusercontent.com/_bJJJYSjRDfE/Tb6EdgfwKLI/AAAAAAAABW8/zQ2dpba4P8A/s288/alterplay-APSplitViewController-landscape%E2%80%93root.png)](https://lh5.googleusercontent.com/_bJJJYSjRDfE/Tb6EdgfwKLI/AAAAAAAABW8/zQ2dpba4P8A/s800/alterplay-APSplitViewController-landscape%E2%80%93root.png)
+[![](https://lh6.googleusercontent.com/_bJJJYSjRDfE/Tb6EdAiX4HI/AAAAAAAABW4/wx07hbiHrA0/s288/alterplay-APSplitViewController-landscape%E2%80%93subcontroller.png)](https://lh6.googleusercontent.com/_bJJJYSjRDfE/Tb6EdAiX4HI/AAAAAAAABW4/wx07hbiHrA0/s800/alterplay-APSplitViewController-landscape%E2%80%93subcontroller.png)
 
 
 Future releases
