@@ -6,9 +6,9 @@
 //  Copyright 2011 Alterplay. All rights reserved.
 //
 
-// 
-// It sends rotations events to subcontrollers
-// 
+// ABOUT
+// 1. Use it as base when you want APBaseSplitViewController to be contained in UITabBarController
+// 2. It sends rotations events to content-controllers
 
 #import <UIKit/UIKit.h>
 

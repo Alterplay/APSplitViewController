@@ -18,4 +18,6 @@ Please look [the issue tracker](https://github.com/slatvick/APSplitViewControlle
 
 
 Cheers,
-Slava Bushtruk, [Alterplay](http://www.alterplay.com)
+
+[Slava Bushtruk](http://twitter.com/#!/CocoaTouchDev),
+[Alterplay](http://www.alterplay.com)
