@@ -72,19 +72,19 @@
 		F909826C136DA60000C99CF5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F965505C1372927E001F7E4B /* Two Sides Split */,
+				F965505C1372927E001F7E4B /* Simple Split */,
 				F965505D13729295001F7E4B /* Master–Detail Split */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		F965505C1372927E001F7E4B /* Two Sides Split */ = {
+		F965505C1372927E001F7E4B /* Simple Split */ = {
 			isa = PBXGroup;
 			children = (
 				F909826F136DA60000C99CF5 /* SimpleSplitController.h */,
 				F9098270136DA60000C99CF5 /* SimpleSplitController.m */,
 			);
-			name = "Two Sides Split";
+			name = "Simple Split";
 			sourceTree = "<group>";
 		};
 		F965505D13729295001F7E4B /* Master–Detail Split */ = {
