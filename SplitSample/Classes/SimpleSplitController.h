@@ -9,11 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "APSplitViewController.h"
 
-@interface ConcreteSplitController : APSplitViewController {
+@interface SimpleSplitController : APSplitViewController {
 }
 
 @property (nonatomic, retain) UIViewController *left;
 @property (nonatomic, retain) UIViewController *right;
-
 
 @end

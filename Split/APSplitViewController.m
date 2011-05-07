@@ -66,6 +66,7 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 }
 
 - (void) dealloc {
+
     [_master release];
     [_detail release];
     [super dealloc];
@@ -73,7 +74,7 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 
 #pragma mark - View lifecycle
 
-- (void) pushMasterController:(UIViewController *)controller {
+- (void) pushToMasterController:(UIViewController *)controller {
     
 	CGSize size = [self sizeRotated];
 	
@@ -91,7 +92,7 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 	[self.view bringSubviewToFront:_divider];
 }
 
-- (void) pushDetailController:(UIViewController *)controller {
+- (void) pushToDetailController:(UIViewController *)controller {
     
 	CGSize size = [self sizeRotated];
 	
@@ -137,9 +138,9 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 - (void) viewDidLoad {
     [super viewDidLoad];
 
-    _master = [UINavigationController new];
-    _detail = [UINavigationController new];
-
+    _master = [[APNavigationControllerForSplitController alloc] initWithSplit:self];
+    _detail = [[APNavigationControllerForSplitController alloc] initWithSplit:self];
+        
     // don't remember what for?
 	//[_master viewDidLoad];
 	//[_detail viewDidLoad];
@@ -152,6 +153,7 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 }
 
 - (void) viewDidUnload {
+
     [_master release], _master = nil;
     [_detail release], _detail = nil;
 }
@@ -205,7 +207,6 @@ static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusb
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
 	[_master didRotateFromInterfaceOrientation:fromInterfaceOrientation];
 	[_detail didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-    
 //    [self layoutSubviews];
 }
 

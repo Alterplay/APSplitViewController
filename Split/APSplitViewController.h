@@ -7,15 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APNavigationControllerForSplitController.h"
 
-@interface APSplitViewController : UIViewController {
+@protocol APSplitViewDelegate<NSObject>
+@optional
+- (void)navigationController:(UINavigationController*)navigationController popedDetailController:(UIViewController*)popedController;
+@end
+
+@interface APSplitViewController : UIViewController <APSplitViewDelegate> {
     UIView *_divider;
 }
 
-@property (nonatomic, readonly) UINavigationController *master;
-@property (nonatomic, readonly) UINavigationController *detail;
+@property (nonatomic, readonly) APNavigationControllerForSplitController *master;
+@property (nonatomic, readonly) APNavigationControllerForSplitController *detail;
 
-- (void) pushMasterController:(UIViewController *)controller;
-- (void) pushDetailController:(UIViewController *)controller;
+- (void) pushToMasterController:(UIViewController *)controller;
+- (void) pushToDetailController:(UIViewController *)controller;
 
 @end
